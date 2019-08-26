@@ -748,6 +748,9 @@ span {
     margin-left: 0px;
     padding: 20px;
     border: 0px solid #324C5f;
-
   }
- }
+
+  #projects_body{
+    width: 100% !important;
+  }
+}
