@@ -757,4 +757,9 @@ span {
   .guide_block{
     width: 100% !important;
   }
+
+  body{
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
 }
