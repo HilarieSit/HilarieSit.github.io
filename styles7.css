@@ -753,4 +753,8 @@ span {
   #projects_body{
     width: 100% !important;
   }
+
+  .guide_block{
+    width: 100% !important;
+  }
 }
