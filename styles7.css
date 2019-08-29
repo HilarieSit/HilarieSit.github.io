@@ -419,7 +419,7 @@ footer p{
 
 For project page
 
-#projects2 {
+#projects {
   background-color: #eee;
 }
 
@@ -482,7 +482,7 @@ span {
   height: 20px;
 }
 
-#projects2 a p{
+#projects a p{
   font-family: "Helvetica Neue";
   float: left;
   margin-top: 20px !important;
@@ -493,7 +493,7 @@ span {
   font-weight: bold !important;
 }
 
-#projects2 a p:hover{
+#projects a p:hover{
   color: #1d92c3;
 }
 
