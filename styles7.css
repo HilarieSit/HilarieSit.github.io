@@ -186,6 +186,7 @@ h3 {
   min-width: 100%;
   overflow-x: auto !important;
   padding-bottom: 30px;
+
 }
 
 .projects::-webkit-scrollbar{
@@ -418,7 +419,7 @@ footer p{
 
 For project page
 
-#projects {
+#projects2 {
   background-color: #eee;
 }
 
@@ -481,7 +482,7 @@ span {
   height: 20px;
 }
 
-#projects a p{
+#projects2 a p{
   font-family: "Helvetica Neue";
   float: left;
   margin-top: 20px !important;
@@ -492,7 +493,7 @@ span {
   font-weight: bold !important;
 }
 
-#projects a p:hover{
+#projects2 a p:hover{
   color: #1d92c3;
 }
 
@@ -755,11 +756,15 @@ span {
   }
 
   .guide_block{
-    width: 100% !important;
+    max-width: 100% !important;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
-  body{
-    width: 100% !important;
-    overflow-x: hidden !important;
+  .twitter-tweet {
+    display: inline-block !important;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
