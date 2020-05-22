@@ -2,244 +2,159 @@
 <html>
 
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Hilarie Sit </title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="styles7.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet"></head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hilarie Sit </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles7.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+</head>
 
 <body>
-  <div id="nav" class="nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-    </ul>
-  </div><!--end of nav-->
+    <div id="nav" class="nav">
+        <p>HILARIE SIT</p>
+        <ul>
+            <li><a href="#">WORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </div>
+    <!--end of nav-->
 
-  <div id="space">
-  </div><!--end of space-->
+    <div id="bio_writing">
+        <p> Hello. I'm a second year PhD student in Remote Sensing at Cornell University, advised by <a href="https://earls.cee.cornell.edu/"> Prof. Christopher Earls</a>. My research and personal interests lie at the intersection of engineering, computing, and
+            design. </p>
+    </div>
+    <!--end of bio_writing-->
+    <!-- <h3> Academic Work </h3> -->
+    <div class="projects">
+        <div class="proj_containers">
+            <div class="img_containers">
+                <img class="mySlides2" src="images/fig3.png" alt="mlp" style="width:100%">
+            </div>
+            <!--end of img_containers-->
+            <a href="research.html">
+            <div class="txt_containers">
+                <h6> Research Papers </h6>
+                <h5> Machine Learning for EM Duct Characterization</h5>
+                <p> Demostrated the suitability of machine learning approaches on the real-time duct characterization problem </p>
+                <!-- <div class="txt_overlay"><p>More details</p></div> -->
+            </div>
+            <!--end of txt_containers--></a>
+        </div>
+        <!--end of proj_containers-->
 
-  <div class="blue1">
-    <div id="bio">
-      <div id="bio_img">
-        <img id="me" src="images/me.jpg" alt="me">
-      </div><!--end of bio_img-->
-      <div id="bio_writing">
-        <h4> Hilarie Sit </h4>
-        <p> Hello! I am a second year PhD student in Remote Sensing at Cornell University, advised by <a href="https://earls.cee.cornell.edu/"> Prof. Christopher Earls</a>.</p>
-        <p> My research interests lie at the intersection of engineering and computing and include machine learning, data science, and scientific computing. </p>
+        <div class="proj_containers">
+            <div class="img_containers">
+                <img class="mySlides2" src="images/eye.png" alt="eye.png" style="width:100%">
+            </div>
+            <!--end of img_containers-->
+            <a href="comsol.html">
+            <div class="txt_containers">
+                <h6> Report / Team Project </h6>
+                <h5> COMSOL Simulation of Ocular Drug Delivery from Hydrogel Ring </h5>
+                <p> Modeled Ofloxicin pharmakinetics from a hydrogel ring to the posterior eye using COMSOL Multiphysics and AutoCAD </p>
+            </div></a>
+            <!--end of txt_containers-->
+        </div>
+        <!--end of proj_containers-->
+
+        <div class="proj_containers">
+            <div class="img_containers">
+                <img class="mySlides2" src="images/guide.png" alt="guide" style="width:100%">
+            </div>
+            <!--end of img_containers-->
+            <a href="https://github.com/HilarieSit/ML-Mini-Course">
+            <div class="txt_containers">
+                <h6> Guides & Articles </h6>
+                <h5> Neural Network Mini-Course </h5>
+                <p> Guides and activities for Summer 2018 interns to introduce them to neural networks and their implementation with Tensorflow </p>
+            </div></a>
+        </div>
+
+        <div class="proj_containers">
+            <div class="img_containers">
+                <img class="mySlides2" src="images/guide.png" alt="guide" style="width:100%">
+            </div>
+            <!--end of img_containers-->
+            <a href="https://github.com/HilarieSit/ClubManage-backend">
+            <div class="txt_containers">
+                <h6> App Design & Backend / Team Project </h6>
+                <h5> ClubManage </h5>
+                <p> Designed club management application and built backend using Flask and SQLAlchemy <br>
+                Best Documentation & Runner-up for Best Application Design, Spring '20 backend course</p>
+            </div></a>
+        </div>
+
+        <div class="proj_containers">
+            <div class="img_containers">
+                <img class="mySlides2" src="images/ceegsaredesign2.png" alt="guide" style="width:100%">
+            </div>
+            <!--end of img_containers-->
+            <a href="https://github.com/HilarieSit/ML-Mini-Course">
+            <div class="txt_containers">
+                <h6> Web Development </h6>
+                <h5> CEE GSA Website Redesign </h5>
+                <p> Backend Development for club management application using Flask and SQLAlchemy </p>
+            </div></a>
+        </div>
+
+        <!--end of proj_containers-->
+
+        <!-- <div class="proj_containers">
+            <div class="img_containers">
+                <img class="mySlides2" src="images/medium.png" alt="guide" style="width:100%">
+            </div> -->
+            <!--end of img_containers-->
+            <!-- <div class="txt_containers">
+                <h6> WRITING </h6>
+                <a href="https://github.com/HilarieSit/ML-Mini-Course"><h5> Medium Articles </h5></a>
+                <p> Various articles about interesting topics and things I've learned </p>
+            </div>
+        </div> -->
+        <!--end of proj_containers-->
+        <!-- <h1> Design Work </h1>
+        <div class="design">
+        <div class="sub_containers">
+            <div class="img_containers">
+                <img class="mySlides2" src="images/cee.png" alt="mlp" style="width:100%">
+            </div> -->
+            <!--end of img_containers-->
+            <!-- <div class="txt_containers">
+                <h6> FRONT-END </h6>
+                <a href="ceegsa-redesign.html"><h5> CEE GSA Redesign </h5></a>
+            </div>
+        </div>
+        <div class="sub_containers">
+            <div class="img_containers">
+                <img class="mySlides2" src="images/cee.png" alt="mlp" style="width:100%">
+            </div> -->
+            <!--end of img_containers-->
+            <!-- <div class="txt_containers">
+                <h6> FRONT-END </h6>
+                <a href="ceegsa-redesign.html"><h5> Porfolio Design </h5></a>
+            </div>
+        </div> -->
+      </div>
+<!--
+    </div> -->
+    <!--end of projects-->
+
+
+
+    <footer>
         <a href="mailto:hs764@cornell.edu">
-          <img class="logo" src="images/e-mail-logo.png" alt="ln"> </a>
+            <img class="logo" src="images/e-mail-logo.png" alt="ln"> </a>
         <a href="https://www.linkedin.com/in/hilariesit">
-          <img class="logo" src="images/In-Blue-128.png" alt="ln"> </a>
+            <img class="logo" src="images/In-Blue-128.png" alt="ln"> </a>
         <a href="https://medium.com/@hs764">
-          <img class="logo" src="images/Monogram.png" alt="medium"> </a>
+            <img class="logo" src="images/Monogram.png" alt="medium"> </a>
         <a href="https://github.com/HilarieSit">
-          <img class="logo" src="images/GitHub-Mark-120px-plus.png" alt="git"> </a>
-      </div><!--end of bio_writing-->
-    </div><!--end of bio-->
-    <div class="buttondown"></div>
-    <a name="projectslink"></a>
-  </div><!--end of blue1-->
-
-  <div id=project_header>
-  <h3> Featured Projects </h3></div>
-
-  <div class="projects">
-    <div class="block1">
-    </div><!--end of block1-->
-
-    <div class="block2">
-    </div><!--end of block2-->
-
-    <div class="button1">
-    </div><!--end of button1-->
-
-    <div class="button2">
-    </div><!--end of button2-->
-
-    <div class="blank_space_left">
-    </div><!--end of blank_space_left-->
-
-    <div class="proj_containers">
-      <div class="news"> <b> 2019 Preprint </b> </div>
-      <a href="https://arxiv.org/abs/1905.10653">
-      <div class="img_containers">
-        <img class="mySlides2" src="images/duct.png" alt="duct" style="width:100%">
-      </div><!--end of img_containers-->
-      <h5> Gaussian Process Regression (GPR) for EM Duct Characterization </h5>
-      <p> Implemented GPR using scikit-learn to predict evaporation duct height from sparsely sampled propagation data </p>
-      </a>
-    </div><!--end of proj_containers-->
-
-    <div class="line"> </div>
-
-    <div class="proj_containers">
-      <div class="news"> <b> 2019 Preprint </b> </div>
-      <a href="https://arxiv.org/abs/1903.03010">
-      <div class="img_containers">
-        <img class="mySlides2" src="images/mlp.png" alt="mlp" style="width:100%">
-      </div><!--end of img_containers-->
-      <h5> Artificial Neural Networks for EM Duct Characterization </h5>
-      <p> Implemented multilayer perceptron using Tensorflow with grid-search hyperparameter optimization for the duct characterization problem </p>
-      </a>
-    </div><!--end of proj_containers-->
-
-    <div class="line"> </div>
-
-    <div class="proj_containers">
-      <div class="news"> <b> 2018 Report </b> </div>
-      <a href="https://ecommons.cornell.edu/handle/1813/57231">
-      <div class="img_containers">
-        <img class="mySlides2" src="images/eye.png" alt="eye.png" style="width:100%">
-      </div><!--end of img_containers-->
-      <h5> COMSOL Simulation of Ocular Drug Delivery </h5>
-      <p> Modeled Ofloxicin pharmakinetics to the posterior eye (geometry sketched using AutoCAD) with COMSOL Multiphysics </p>
-      </a>
-    </div><!--end of proj_containers-->
-
-    <div class="line"> </div>
-
-    <div class="proj_containers">
-      <div class="news"> <b> Activites </b> </div>
-      <a href="https://github.com/HilarieSit/ML-Mini-Course">
-      <div class="img_containers">
-        <img class="mySlides2" src="images/guide.png" alt="guide" style="width:100%">
-      </div><!--end of img_containers-->
-      <h5> Neural Network Mini-Course </h5>
-      <p> Guides and activities for Summer 2018 interns to introduce them to neural networks and their implementation with Tensorflow </p>
-      </a>
-    </div><!--end of proj_containers-->
-
-    <div class="blank_space_right">
-    </div><!--end of blank_space_right-->
-  </div><!--end of projects-->
-
-  <div class="gray">
-    <h3> Teaching </h3>
-
-    <div class="res_block">
-      <h4> PLBIO 2400 Teaching Assistant </h4>
-      <span> Spring 2018 </span>
-      <ul>
-        <li> Instructed recitation and graded written assignments </li>
-      </ul>
-    </div><!--end of res_block-->
-
-    <div class="res_block">
-      <h4> CS 1300 Teaching Assistant </h4>
-      <span> Fall 2017 </span>
-      <ul>
-        <li> Instructed recitation and graded HTML/CSS/jQuery/PHP assignments </li>
-        <li> Assisted students with debugging and understanding
-          course concepts during office hours</li>
-      </ul>
-    </div><!--end of res_block-->
-
-    <div class="res_block">
-      <h4> ENGRG 1500 Peer Advisor </h4>
-      <span> Fall 2016 &amp; Fall 2017 </span>
-      <ul>
-        <li> Planned and organized the weekly first-year engineering seminar to assist faculty advisor and provide
-            guidance to first-year students </li>
-      </ul>
-    </div><!--end of res_block-->
-  </div><!--end of blue-->
-
-  <div class="blue">
-    <h3>  Involvement </h3>
-    <div class="res_block">
-      <h4> CEE Graduate Student Association </h4>
-      <span> Aug 2018 - Present </span>
-      <ul>
-        <li> Treasurer (current) </li>
-        <li> GPSA Representative (past): Represented CEE GSA at Graduate and Professional Student Association meetings </li>
-      </ul>
-    </div><!--end of res_block-->
-
-    <div class="res_block">
-      <h4> Alpha Epsilon Honor Society </h4>
-      <span> Aug 2017 - May 2018 </span>
-      <ul>
-        <li> Outreach, mentoring, and volunteering with the Biological and Environmental Engineering honor society </li>
-      </ul>
-    </div><!--end of res_block-->
-
-    <div class="res_block">
-      <h4> RCPRS Program </h4>
-      <span> Aug 2014 - May 2018 </span>
-      <ul>
-        <li> Hunter R. Rawlings III Cornell Presidential Research Scholars Program </li>
-        <li> Undergraduate research in biomedical engineering (Jan. 2015 - Dec. 2017), advised by Prof. Ben Cosgrove </li>
-      </ul>
-    </div><!--end of res_block-->
-  </div><!--end of blue-->
-
-
-  <div class="gray">
-    <h3> Coursework </h3>
-
-    <div id="coursework">
-      <ul>
-        <li> CS 6780 Advanced Machine Learning </li>
-        <li> CS 6670 Computer Vision </li>
-        <li> CS 4780 Large-Scale Machine Learning </li>
-        <li> CEE 6000 Numerical Methods </li>
-      </ul>
-      <ul>
-        <li> CEE 5780 Finite Element Analysis </li>
-        <li> MATH 4210 Nonlinear Dynamics and Chaos </li>
-        <li> BEE 4530 Computer-Aided Engineering </li>
-        <li> NBA 5380 Business Factory Idea </li>
-      </ul>
-    </div><!--end of coursework-->
-  </div><!--end of gray-->
-
-  <div class="grayend">
-    <div id="contact">
-      <div class="buttonup"></div>
-      <h3> Contact </h3>
-        <a href="mailto:hs764@cornell.edu">
-          <img class="logo" src="images/e-mail-logo.png" alt="ln"> </a>
-        <a href="https://www.linkedin.com/in/hilariesit">
-          <img class="logo" src="images/In-Blue-128.png" alt="ln"> </a>
-        <a href="https://medium.com/@hs764">
-          <img class="logo" src="images/Monogram.png" alt="medium"> </a>
-        <a href="https://github.com/HilarieSit">
-          <img class="logo" src="images/GitHub-Mark-120px-plus.png" alt="git"> </a>
-    </div><!--end of contact-->
-  </div><!--end of grayend-->
-
-  <footer>
-  	<p> &copy; Hilarie Sit, 2019 </p>
-  </footer>
-
-  <script>
-    $('.button1').on('hover', function() {
-      $('.projects').animate({
-        scrollLeft: '-=850'
-      });
-    });
-
-    $('.button2').on('hover', function() {
-      $('.projects').animate({
-        scrollLeft: '+=850'
-      });
-    });
-
-    $(".buttondown").on('hover', function() {
-      $('html, body').animate({
-          scrollTop: $('h3').offset().top - 20
-        }, 700, 'swing');
-    });
-
-    $(".buttonup").on('hover', function() {
-      $('html, body').animate({
-          scrollTop: 0
-        });
-    });
-
-  </script>
+            <img class="logo" src="images/GitHub-Mark-120px-plus.png" alt="git"> </a>
+        <p> &copy; Hilarie Sit, 2020 </p>
+    </footer>
+    <script>
+    </script>
 </body>
