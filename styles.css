@@ -285,11 +285,6 @@ footer .logo img {
     border-radius: 0px;
     height: auto;
   }
-  .txt_containers:hover {
-    box-shadow: 0 0 gray;
-    top: 0;
-    left: 0;
-  }
   .txt_containers .overlay {
     display: inline-block !important;
   }
