@@ -1,0 +1,452 @@
+// styles.scss
+$alt-blue: #d2dfe7;
+$alt-grey: #eee;
+$plum-purple: #8E4585;
+$default-font: Lato, serif;
+$header-font: PT Sans Narrow, sans-serif;
+$breakpoint-tablet: 1000px;
+$breakpoint-phone: 700px;
+
+a {
+  font: 20px $default-font;
+  outline: 0;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h4 {
+  font: 30px $default-font;
+}
+
+h5 {
+  float: left;
+  width: 100%;
+  margin: 7px 0 5px 0;
+  font: 30px $header-font;
+  text-decoration: none;
+  color: #16161d;
+  align-items: center;
+}
+
+h6 {
+  font: 20px $default-font;
+  font-weight: 500;
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  color: #777;
+  font-style: italic;
+}
+
+// ALL PAGES
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto !important;
+  width: 100%;
+  font: 22px $default-font;
+  font-weight: 600;
+  color: black;
+  z-index: 3;
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    float: right;
+  }
+
+  li{
+    float: left;
+  }
+
+  a{
+    font-size: 25px;
+    float: right;
+    margin: 5px 20px 10px 15px;
+
+    &:hover {
+      color: $plum-purple;
+    }
+  }
+
+  p{
+    float: left;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border: 2px solid black;
+  }
+}
+
+footer {
+	left: 0;
+	right: 0;
+  bottom: 0;
+  margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+
+  p{
+    font: 20px $default-font;
+    text-align: center;
+  }
+
+  .logo{
+    margin: 0 auto;
+    padding: 20px 1vw 0px 1vw !important;
+    width: 40px;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+#bio_writing {
+  width: 950px;
+  margin: 0 auto;
+  padding: 100px 0 30px 0;
+  font: 23px $default-font;
+  display: flex;
+  align-items: center;
+
+  a {
+    font-size: 23px;
+    color: black;
+  }
+
+  img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  #bio_txt{
+    width: auto;
+    padding-left: 20px;
+    display: inline-block;
+  }
+}
+
+ // HOMEPAGE
+.project{
+  width: 100%;
+}
+
+.proj_containers {
+  display: flex;
+  justify-content: center !important;
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @at-root .img_containers{
+    width: 450px;
+    text-align: center;
+    height: auto;
+    padding: 0;
+
+    img, video{
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      height: 280px;
+      width: auto !important;
+      max-width: 420px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  &:nth-child(odd) .txt_containers{
+    background-color: $alt-blue;
+  }
+
+  &:nth-child(even) .txt_containers{
+    background-color: $alt-grey;
+  }
+
+  @at-root .txt_containers {
+    position: relative;
+    padding: 40px 20px;
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+
+    &:hover{
+      box-shadow: 7px 7px #999;
+      top: -7px;
+      left: -7px;
+    }
+
+    .overlay{
+      display: none;
+      position: absolute;
+      width: auto;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+}
+
+// ABOUT PAGE
+
+#about{
+  width: 950px;
+  margin: 0 auto;
+}
+
+.about_block{
+  width: auto;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  &:nth-child(odd){
+    background-color: $alt-blue;
+  }
+
+  &:nth-child(even){
+    background-color: $alt-grey;
+  }
+
+  @at-root .res_block{
+    display: inline-block;
+    width: calc(100% - 60px);
+    margin: 10px 0;
+    height: auto;
+    padding: 0 30px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+
+    h4{
+      font: 25px $header-font;
+      margin: 5px 0;
+      padding-bottom: 10px;
+      float: left;
+    }
+
+    span {
+      font: 20px $default-font;
+      float: right;
+      margin-top: 7px;
+    }
+
+    ul{
+      text-align: left;
+      margin: 20px 30px;
+      padding-top: 10px;
+    }
+
+    li{
+      font: 22px $default-font;
+      width: 90%;
+      float: left;
+    }
+  }
+
+  @at-root #coursework{
+    display: flex;
+    justify-content: center;
+    padding: 0 2% 20px 2%;
+
+    li{
+      font: 22px $default-font;
+      padding: 5px;
+    }
+
+    ul{
+      text-align: left;
+      list-style-position: inside;
+      list-style-type: none;
+    }
+  }
+}
+
+#title{
+  margin: 90px auto 0 auto;
+  align-content: center;
+  max-width: 950px;
+  width: 90%;
+  p{
+    font: 20px $default-font;
+  }
+}
+
+#research{
+  margin: 0 auto;
+  align-content: center;
+  max-width: 950px;
+  width: 90%;
+
+  p{
+    font: 20px $default-font;
+  }
+
+  video{
+    margin: 0 auto;
+    align-content: center;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  ul{
+    float: left;
+  }
+
+  li{
+    font: 20px $default-font;
+  }
+
+  a{
+    font: 20px $plum-purple !important;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #bio_writing {
+    width: auto;
+    padding: 90px 5% 20px 5% !important;
+  }
+
+  .projects{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+  }
+
+  .proj_containers{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 45%;
+    margin: 10px 7px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @at-root .txt_containers{
+      width: auto;
+      border-radius: 0px;
+      height: auto;
+
+      &:hover{
+        box-shadow: 0 0 gray;
+        top: 0;
+        left: 0;
+      }
+
+      .overlay{
+        display: inline-block !important;
+      }
+    }
+    @at-root .img_containers{
+      width: 100% !important;
+
+      img, video{
+        width: 100% !important;
+        max-width: 650px;
+        height: auto !important;
+        padding: 0;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  }
+
+
+  #about{
+    width: 90%;
+    margin: 0 auto;
+
+    @at-root .about_block{
+      width: auto;
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  nav{
+    p{
+      display: none;
+    }
+    a{
+      width: 100%;
+    }
+  }
+  .proj_containers{
+    width: 90%;
+    margin-bottom: 30px;
+
+    @at-root .txt_containers {
+      padding: 25px 20px 40px 20px;
+    }
+  }
+
+  #coursework{
+    display: inline;
+
+    ul{
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  #bio_writing{
+    display: inline-block;
+    align-content: center;
+
+    #bio_txt{
+      padding: 0;
+    }
+
+    img{
+      max-height: 300px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 25%;
+    }
+  }
+
+  .about{
+    width: 100%;
+  }
+
+  .res_block{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    ul{
+      text-align: left;
+      margin-left: 25px;
+      padding: 0;
+    }
+
+    span{
+      float: left !important;
+      width: 100%;
+      margin: -10px 0 10px 0;
+    }
+
+    h4 {
+      width: 100%;
+      padding-top: 10px;
+    }
+
+  }
+}
