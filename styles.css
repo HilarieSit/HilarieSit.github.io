@@ -39,37 +39,26 @@ h6 {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   margin: 0 auto !important;
   width: 100%;
-  font: 22px Lato, serif;
   font-weight: 600;
   color: black;
   z-index: 3;
 }
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  float: right;
-}
-nav li {
-  float: left;
-}
-nav a {
-  font-size: 25px;
-  float: right;
-  margin: 5px 20px 10px 15px;
-}
-nav a:hover {
-  color: #8E4585;
-}
 nav p {
+  font: 25px Lato, serif;
   float: left;
   margin-left: 20px;
   padding: 5px 10px;
   border: 2px solid black;
+  background: rgba(255, 255, 255, 0.7);
+}
+nav p:hover {
+  border: 2px solid #8E4585;
+  color: #8E4585;
 }
 
 footer {
@@ -88,7 +77,7 @@ footer p {
 }
 footer .logo {
   margin: 0 auto;
-  padding: 20px 1vw 0px 1vw !important;
+  padding: 25px 0 0 20px !important;
   width: 40px;
 }
 footer .logo img {
@@ -96,7 +85,7 @@ footer .logo img {
 }
 
 #bio_writing {
-  width: 950px;
+  width: 985px;
   margin: 0 auto;
   padding: 100px 0 30px 0;
   font: 23px Lato, serif;
@@ -130,10 +119,11 @@ footer .logo img {
   margin-bottom: 20px;
 }
 .img_containers {
-  width: 450px;
+  width: 420px;
   text-align: center;
   height: auto;
   padding: 0;
+  margin-right: 25px;
 }
 .img_containers img, .img_containers video {
   position: relative;
@@ -163,11 +153,6 @@ footer .logo img {
   top: 0;
   left: 0;
 }
-.txt_containers:hover {
-  box-shadow: 7px 7px #999;
-  top: -7px;
-  left: -7px;
-}
 .txt_containers .overlay {
   display: none;
   position: absolute;
@@ -177,7 +162,7 @@ footer .logo img {
 }
 
 #about {
-  width: 950px;
+  width: 985px;
   margin: 0 auto;
 }
 
@@ -187,10 +172,10 @@ footer .logo img {
   margin-bottom: 30px;
   border-radius: 10px;
 }
-.about_block:nth-child(odd) {
+.about_block:nth-child(even) {
   background-color: #d2dfe7;
 }
-.about_block:nth-child(even) {
+.about_block:nth-child(odd) {
   background-color: #eee;
 }
 .res_block {
@@ -323,6 +308,7 @@ footer .logo img {
   #about {
     width: 90%;
     margin: 0 auto;
+    padding-top: 20px;
   }
   .about_block {
     width: auto;
@@ -330,16 +316,9 @@ footer .logo img {
   }
 }
 @media (max-width: 700px) {
-  nav p {
-    display: none;
-  }
-  nav a {
-    width: 100%;
-  }
-
   .proj_containers {
     width: 90%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .txt_containers {
     padding: 25px 20px 40px 20px;
@@ -367,8 +346,8 @@ footer .logo img {
     object-position: 50% 25%;
   }
 
-  .about {
-    width: 100%;
+  #about {
+    padding-top: 10px;
   }
 
   .res_block {

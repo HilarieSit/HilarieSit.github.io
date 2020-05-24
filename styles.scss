@@ -49,41 +49,48 @@ h6 {
 
 // ALL PAGES
 nav{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   margin: 0 auto !important;
   width: 100%;
-  font: 22px $default-font;
   font-weight: 600;
   color: black;
   z-index: 3;
 
-  ul{
-    list-style-type: none;
-    padding: 0;
-    float: right;
-  }
+  // ul{
+  //   list-style-type: none;
+  //   padding: 0;
+  //   float: right;
+  // }
+  //
+  // li{
+  //   float: left;
+  // }
 
-  li{
-    float: left;
-  }
-
-  a{
-    font-size: 25px;
-    float: right;
-    margin: 5px 20px 10px 15px;
-
-    &:hover {
-      color: $plum-purple;
-    }
-  }
+  // a{
+  //   font-size: 25px;
+  //   float: right;
+  //   margin: 5px 20px 10px 15px;
+  //
+  //   &:hover {
+  //     color: $plum-purple;
+  //   }
+  // }
 
   p{
+    font: 25px $default-font;
     float: left;
     margin-left: 20px;
     padding: 5px 10px;
     border: 2px solid black;
+    background: rgba(255, 255, 255, 0.7);
+
+    &:hover{
+        // background: rgba(255, 255, 255, 1);
+        border: 2px solid $plum-purple;
+        color: $plum-purple;
+    }
   }
 }
 
@@ -104,7 +111,7 @@ footer {
 
   .logo{
     margin: 0 auto;
-    padding: 20px 1vw 0px 1vw !important;
+    padding: 25px 0 0 20px !important;
     width: 40px;
 
     img{
@@ -114,7 +121,7 @@ footer {
 }
 
 #bio_writing {
-  width: 950px;
+  width: 985px;
   margin: 0 auto;
   padding: 100px 0 30px 0;
   font: 23px $default-font;
@@ -152,10 +159,11 @@ footer {
   margin-bottom: 20px;
 
   @at-root .img_containers{
-    width: 450px;
+    width: 420px;
     text-align: center;
     height: auto;
     padding: 0;
+    margin-right: 25px;
 
     img, video{
       position: relative;
@@ -188,11 +196,11 @@ footer {
     top: 0;
     left: 0;
 
-    &:hover{
-      box-shadow: 7px 7px #999;
-      top: -7px;
-      left: -7px;
-    }
+    // &:hover{
+    //   box-shadow: 7px 7px #999;
+    //   top: -7px;
+    //   left: -7px;
+    // }
 
     .overlay{
       display: none;
@@ -207,7 +215,7 @@ footer {
 // ABOUT PAGE
 
 #about{
-  width: 950px;
+  width: 985px;
   margin: 0 auto;
 }
 
@@ -217,11 +225,11 @@ footer {
   margin-bottom: 30px;
   border-radius: 10px;
 
-  &:nth-child(odd){
+  &:nth-child(even){
     background-color: $alt-blue;
   }
 
-  &:nth-child(even){
+  &:nth-child(odd){
     background-color: $alt-grey;
   }
 
@@ -371,6 +379,7 @@ footer {
   #about{
     width: 90%;
     margin: 0 auto;
+    padding-top: 20px;
 
     @at-root .about_block{
       width: auto;
@@ -380,17 +389,9 @@ footer {
 }
 
 @media (max-width: $breakpoint-phone) {
-  nav{
-    p{
-      display: none;
-    }
-    a{
-      width: 100%;
-    }
-  }
   .proj_containers{
     width: 90%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     @at-root .txt_containers {
       padding: 25px 20px 40px 20px;
@@ -422,8 +423,8 @@ footer {
     }
   }
 
-  .about{
-    width: 100%;
+  #about{
+    padding-top: 10px;
   }
 
   .res_block{
