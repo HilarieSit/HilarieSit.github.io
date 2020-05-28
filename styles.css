@@ -40,25 +40,37 @@ h6 {
 
 nav {
   position: fixed;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
+  max-width: 1000px;
+  display: inline-block;
+  align-content: center;
   margin: 0 auto !important;
-  width: 100%;
+  /* width: 100%; */
   font-weight: 600;
   color: black;
   z-index: 3;
 }
 nav p {
+  display: inline-block;
   font: 25px Lato, serif;
   float: left;
   margin-left: 20px;
   padding: 5px 10px;
+  width: 140px;
+  text-align: center;
   border: 2px solid black;
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
 }
-nav p:hover {
-  border: 2px solid #8E4585;
-  color: #8E4585;
+
+#contact{
+  display: block;
+  position: fixed;
+  left: 190px;
+  width: calc(100% - 190px);
+  padding-bottom: 50px;
+  z-index: 3;
+  display: none;
 }
 
 footer {
@@ -66,7 +78,7 @@ footer {
   right: 0;
   bottom: 0;
   margin: 0;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   text-align: center;
   width: 100%;
   display: inline-block;
@@ -84,27 +96,51 @@ footer .logo img {
   width: 100%;
 }
 
+nav .logo, nav .logohover {
+  margin: 25px 0 0 10px !important;
+  width: 40px;
+  border: 2px solid white;
+}
+
+nav .logo img, nav .logohover img {
+  width: 100%;
+}
+
+.logohover{
+  display: none;
+}
+
 #bio_writing {
   width: 985px;
   margin: 0 auto;
   padding: 100px 0 30px 0;
-  font: 23px Lato, serif;
+  font: 20px Lato, serif;
   display: flex;
   align-items: center;
 }
 #bio_writing a {
-  font-size: 23px;
+  font-size: 20px;
   color: black;
 }
 #bio_writing img {
   width: 250px;
   height: auto;
-  border-radius: 10px;
+  object-fit: cover;
+  /* border-radius: 20px; */
 }
 #bio_writing #bio_txt {
   width: auto;
   padding-left: 20px;
   display: inline-block;
+}
+
+#bio_writing span{
+  font-style: italic;
+  align-content: center;
+  padding: 0;
+}
+#bio_writing span:hover{
+  color: #8E4585;
 }
 
 .project {
@@ -135,7 +171,7 @@ footer .logo img {
   width: auto !important;
   max-width: 420px;
   object-fit: cover;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .proj_containers:nth-child(odd) .txt_containers {
@@ -149,7 +185,7 @@ footer .logo img {
   padding: 40px 20px;
   height: 200px;
   width: 500px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   top: 0;
   left: 0;
 }
@@ -170,7 +206,7 @@ footer .logo img {
   width: auto;
   padding: 20px;
   margin-bottom: 30px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .about_block:nth-child(even) {
   background-color: #d2dfe7;
@@ -201,7 +237,7 @@ footer .logo img {
 }
 .res_block ul {
   text-align: left;
-  margin: 20px 30px;
+  margin: 20px 30px 20px 0px;
   padding-top: 10px;
 }
 .res_block li {
@@ -226,7 +262,7 @@ footer .logo img {
 }
 
 #title {
-  margin: 90px auto 0 auto;
+  margin: 120px auto 0 auto;
   align-content: center;
   max-width: 950px;
   width: 90%;
@@ -257,47 +293,52 @@ footer .logo img {
   font: 20px Lato, serif;
 }
 #research a {
-  font: 20px #8E4585 !important;
+  font: 20px Lato, serif !important;
+  color: #8E4585;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   #bio_writing {
     width: auto;
     padding: 90px 5% 20px 5% !important;
   }
 
   .projects {
-    display: inline-block;
+    margin: 0 auto;
     align-content: center;
-    text-align: center;
+    width: 90%;
   }
 
-  .proj_containers {
-    display: inline-block;
-    vertical-align: bottom;
-    width: 45%;
-    margin: 10px 7px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
   .txt_containers {
-    width: auto;
-    border-radius: 0px;
-    height: auto;
+    width: 50vw;
+    /* border-radius: 0px; */
+    height: 210px;
+    margin-left: 2vw;
   }
   .txt_containers .overlay {
     display: inline-block !important;
   }
 
-  .img_containers {
-    width: 100% !important;
+  .txt_containers p{
+    font-size: 20px;
   }
+
+  .txt_containers h5{
+    font-size: 25px;
+  }
+
+  .img_containers {
+    margin-right: 0px;
+  }
+
   .img_containers img, .img_containers video {
     width: 100% !important;
+    height: 290px !important;
     max-width: 650px;
-    height: auto !important;
+    object-fit: cover;
     padding: 0;
-    border-radius: 10px 10px 0 0;
+    margin: 0;
+    /* border-radius: 10px 10px 0 0; */
   }
 
   #about {
@@ -309,14 +350,64 @@ footer .logo img {
     width: auto;
     padding: 20px;
   }
+  .res_block li {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  #coursework li {
+    font-size: 20px;
+  }
 }
 @media (max-width: 700px) {
+
+  .proj_containers {
+    display: inline-table;
+    width: 45%;
+    margin: 10px 7px;
+    overflow: hidden;
+  }
   .proj_containers {
     width: 90%;
     margin-bottom: 20px;
   }
   .txt_containers {
     padding: 25px 20px 40px 20px;
+    text-align: left;
+  }
+
+  .projects {
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .txt_containers {
+    width: auto;
+    margin-left: 0px;
+    height: auto;
+  }
+  .txt_containers .overlay {
+    display: inline-block !important;
+  }
+
+  .txt_containers h5{
+    font-size: 25px;
+  }
+
+  .img_containers {
+    width: 100% !important;
+    margin-bottom: -5px;
+  }
+  .img_containers img, .img_containers video {
+    width: 100% !important;
+    height: 250px !important;
+    max-width: 650px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    /* border-radius: 10px 10px 0 0; */
   }
 
   #coursework {
@@ -335,10 +426,11 @@ footer .logo img {
     padding: 0;
   }
   #bio_writing img {
-    max-height: 300px;
+    max-height: 250px;
     width: 100%;
     object-fit: cover;
     object-position: 50% 25%;
+    border-radius: 0px;
   }
 
   #about {
@@ -355,6 +447,7 @@ footer .logo img {
     margin-left: 25px;
     padding: 0;
   }
+
   .res_block span {
     float: left !important;
     width: 100%;
