@@ -1,8 +1,8 @@
 a {
-  font: 20px Lato, serif;
   outline: 0;
   text-decoration: none;
   color: black;
+  font: 20px Lato, serif;
 }
 
 body {
@@ -11,142 +11,58 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  -ms-overflow-style: none;
 }
 
-h4 {
-  font: 30px Lato, serif;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-h5 {
-  float: left;
-  width: 100%;
-  margin: 7px 0 5px 0;
-  font: 30px PT Sans Narrow, sans-serif;
-  text-decoration: none;
-  color: #16161d;
-  align-items: center;
-}
-
-h6 {
-  font: 20px Lato, serif;
-  font-weight: 500;
-  width: 100%;
-  float: left;
-  margin: 0;
-  padding: 0;
-  color: #777;
-  font-style: italic;
-}
-
+/* nav bar styling */
 nav {
-  position: fixed;
-  /* top: 0;
-  left: 0; */
-  max-width: 1000px;
-  display: inline-block;
-  align-content: center;
-  margin: 0 auto !important;
-  /* width: 100%; */
-  font-weight: 600;
-  color: black;
-  z-index: 3;
+  margin: 50px 0 0;
 }
-nav p {
-  display: inline-block;
-  font: 25px Lato, serif;
-  float: left;
-  margin-left: 20px;
-  padding: 5px 10px;
-  width: 140px;
+nav h1{ 
+  margin: 0 0 -10px;
+  padding: 5px 0 0;
+  font-size: 100px;
+  font-family: 'Just Another Hand', cursive;
   text-align: center;
-  border: 2px solid black;
-  background: white;
+  background: linear-gradient(185deg, black, #2a5887, #eee, #2a5887, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 200%;
+  font-weight: normal;
+  cursor: default;
 }
-
-#contact{
+nav ul{
   display: block;
-  position: fixed;
-  left: 190px;
-  width: calc(100% - 190px);
-  padding-bottom: 50px;
-  z-index: 3;
-  display: none;
-}
-
-footer {
-  left: 0;
-  right: 0;
-  bottom: 0;
   margin: 0;
-  padding: 0 0 20px 0;
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-}
-footer p {
-  font: 20px Lato, serif;
-  text-align: center;
-}
-footer .logo {
-  margin: 0 auto;
-  padding: 25px 0 0 20px !important;
-  width: 40px;
-}
-footer .logo img {
-  width: 100%;
-}
-
-nav .logo, nav .logohover {
-  margin: 25px 0 0 10px !important;
-  width: 40px;
-  border: 2px solid white;
-}
-
-nav .logo img, nav .logohover img {
-  width: 100%;
-}
-
-.logohover{
-  display: none;
-}
-
-#bio_writing {
-  width: 985px;
-  margin: 0 auto;
-  padding: 100px 0 30px 0;
-  font: 20px Lato, serif;
-  display: flex;
-  align-items: center;
-}
-#bio_writing a {
-  font-size: 20px;
-  color: black;
-}
-#bio_writing img {
-  width: 250px;
-  height: auto;
-  object-fit: cover;
-  /* border-radius: 20px; */
-}
-#bio_writing #bio_txt {
-  width: auto;
-  padding-left: 20px;
-  display: inline-block;
-}
-
-#bio_writing span{
-  font-style: italic;
-  align-content: center;
   padding: 0;
-}
-#bio_writing span:hover{
-  color: #8E4585;
-}
-
-.project {
   width: 100%;
+  text-align: center;
+}
+nav li{
+  color: #222;
+  display: inline-block;
+  margin: 0 25px;
+  padding: 5px 0;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 45px;
+  cursor: pointer;
+}
+nav li:hover{
+  color: #ff7f50;
+}
+.active{
+  color: #7a9cbf;
 }
 
+/* project styling */
+.projects{
+  width: 100%;
+  margin-top: 25px;
+}
 .proj_containers {
   display: flex;
   justify-content: center !important;
@@ -157,21 +73,21 @@ nav .logo img, nav .logohover img {
 .img_containers {
   width: 420px;
   text-align: center;
+  align-items: center;
   height: auto;
   padding: 0;
   margin-right: 25px;
 }
 .img_containers img, .img_containers video {
   position: relative;
+  display: block;
   top: 0;
   left: 0;
   margin: 0;
   padding: 0;
   height: 280px;
-  width: auto !important;
-  max-width: 420px;
+  width: 420px;
   object-fit: cover;
-  /* border-radius: 10px; */
 }
 
 .proj_containers:nth-child(odd) .txt_containers {
@@ -185,7 +101,6 @@ nav .logo img, nav .logohover img {
   padding: 40px 20px;
   height: 200px;
   width: 500px;
-  /* border-radius: 10px; */
   top: 0;
   left: 0;
 }
@@ -197,43 +112,98 @@ nav .logo img, nav .logohover img {
   right: 20px;
 }
 
+
+h4 {
+  font: 30px Lato, serif;
+}
+
+h5 {
+  width: 100%;
+  margin: 7px 0 7px 0;
+  align-items: center;
+  font: 28px PT Sans Narrow, sans-serif;
+  color: #16161d;
+  text-decoration: none;
+}
+
+.txt_containers h5{
+  float: left;
+}
+
+h6 {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font: 20px Lato, serif;
+  font-weight: 500;
+  color: #777;
+  font-style: italic;
+}
+
+
+/* about styling */
+#bigabout{
+  display: none;
+}
+
+#bio {
+  width: 985px;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  font: 20px Lato, serif;
+  display: flex;
+  align-items: center;
+}
+#bio a {
+  font-size: 20px;
+  color: black;
+}
+#bio img {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  object-fit: cover;
+}
+#bio #bio_txt {
+  width: auto;
+  margin: 0 0 0 20px;
+  padding: 0 20px;
+  display: inline-block;
+  background-color: #d2dfe7;
+  height: 300px;
+}
+#bio #bio_txt h5{
+  padding-top: 20px;
+}
+
 #about {
   width: 985px;
   margin: 0 auto;
 }
+#about p{
+  font: 20px Lato, serif;
+  margin: 2px 0 10px 0;
+}
+#about li{
+  margin: 0 0 15px 0;
+  font: 20px Lato, serif;
+}
 
 .about_block {
   width: auto;
-  padding: 20px;
-  margin-bottom: 30px;
-  /* border-radius: 10px; */
+  padding: 20px 20px 30px;
+  margin-bottom: 20px;
 }
 .about_block:nth-child(even) {
   background-color: #d2dfe7;
 }
 .about_block:nth-child(odd) {
   background-color: #eee;
-}
-.res_block {
-  display: inline-block;
-  width: calc(100% - 60px);
-  margin: 10px 0;
-  height: auto;
-  padding: 0 30px;
-  font-size: 22px;
-  text-decoration: none;
-  color: black;
-}
-.res_block h4 {
-  font: 25px PT Sans Narrow, sans-serif;
-  margin: 5px 0;
-  padding-bottom: 10px;
-  float: left;
-}
-.res_block span {
-  font: 20px Lato, serif;
-  float: right;
-  margin-top: 7px;
 }
 .res_block ul {
   text-align: left;
@@ -246,19 +216,29 @@ nav .logo img, nav .logohover img {
   float: left;
 }
 
+.tight{
+  margin-top: -5px !important;
+}
+
+.tight li{
+  margin: 0 !important;
+}
+
 #coursework {
   display: flex;
-  justify-content: center;
-  padding: 0 2% 20px 2%;
+  justify-content: left;
+  padding: 0;
 }
 #coursework li {
-  font: 22px Lato, serif;
-  padding: 5px;
+  font: 20px Lato, serif;
+  padding: 0;
 }
 #coursework ul {
   text-align: left;
   list-style-position: inside;
   list-style-type: none;
+  margin-left: -40px;
+  margin-right: 40px;
 }
 
 #title {
@@ -297,21 +277,50 @@ nav .logo img, nav .logohover img {
   color: #8E4585;
 }
 
-@media (max-width: 1050px) {
-  #bio_writing {
+#menu{
+  display: none;
+}
+
+button{
+  display: inline;
+  padding: 5px;
+  font: 20px Lato, serif;
+  color: white;
+  background-color: black;
+  border: white 2px solid;
+}
+
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 0 20px 0;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+footer p {
+  font: 20px Lato, serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+  #bio {
+    margin-top: -15px;
     width: auto;
-    padding: 90px 5% 20px 5% !important;
+    padding: 0px 5% !important;
   }
 
   .projects {
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     align-content: center;
     width: 90%;
   }
 
   .txt_containers {
     width: 50vw;
-    /* border-radius: 0px; */
     height: 210px;
     margin-left: 2vw;
   }
@@ -338,29 +347,67 @@ nav .logo img, nav .logohover img {
     object-fit: cover;
     padding: 0;
     margin: 0;
-    /* border-radius: 10px 10px 0 0; */
+  }
+
+  #bigabout{
+    padding-top: 15px;
   }
 
   #about {
     width: 90%;
     margin: 0 auto;
-    padding-top: 20px;
+    margin-top: 20px;
   }
   .about_block {
     width: auto;
-    padding: 20px;
+    padding: 30px 20px 30px;
   }
-  .res_block li {
-    width: 100%;
-    font-size: 20px;
-  }
-
   #coursework li {
     font-size: 20px;
   }
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
+  nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 5;
+    height: 85px;
+    background-color: rgba(255,255,255,0.95);
+  }
+  #menu{
+    float: right;
+    display: block;
+    padding: 25px 5% 0 0;
+  }
 
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  nav ul{
+    padding: 90px 0 30px 0;
+    background-color: rgba(255,255,255,0.95);
+    z-index: 6;
+  }
+
+  nav li{
+    display: block;
+  }
+
+  nav h1{
+    float: left;
+    padding: 20px 0 0 5%;
+    font-size: 70px;
+  }
+  .projects{
+    margin-top: 0;
+  }
   .proj_containers {
     display: inline-table;
     width: 45%;
@@ -393,21 +440,19 @@ nav .logo img, nav .logohover img {
   }
 
   .txt_containers h5{
-    font-size: 25px;
+    font-size: 25px; 
   }
 
-  .img_containers {
-    width: 100% !important;
-    margin-bottom: -5px;
+  .img_containers{
+    width: 100%;
   }
+
   .img_containers img, .img_containers video {
-    width: 100% !important;
-    height: 250px !important;
-    max-width: 650px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
     padding: 0;
     margin: 0;
-    /* border-radius: 10px 10px 0 0; */
   }
 
   #coursework {
@@ -418,45 +463,26 @@ nav .logo img, nav .logohover img {
     margin: 0;
   }
 
-  #bio_writing {
-    display: inline-block;
+  #bio {
+    display: inline-table;
     align-content: center;
   }
-  #bio_writing #bio_txt {
-    padding: 0;
+  #bio #bio_txt {
+    padding: 25px 20px 30px 20px;
+    margin: 5px 0 0 0;
+    height: auto;
   }
-  #bio_writing img {
-    max-height: 250px;
+  #bio img {
+    margin-top: 0;
+    max-height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: 50% 25%;
     border-radius: 0px;
+    margin-bottom: 15px;
   }
 
-  #about {
-    padding-top: 10px;
-  }
-
-  .res_block {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .res_block ul {
-    text-align: left;
-    margin-left: 25px;
-    padding: 0;
-  }
-
-  .res_block span {
-    float: left !important;
-    width: 100%;
-    margin: -10px 0 10px 0;
-  }
-  .res_block h4 {
-    width: 100%;
-    padding-top: 10px;
+  #bio_txt h5{
+    padding-top: 0 !important;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */

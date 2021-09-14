@@ -7,76 +7,146 @@
     <title> Hilarie Sit </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <p>HILARIE SIT</p>
-        <div id="contact">
-          <a href="mailto:hs764@cornell.edu">
-              <img class="logo" src="images/mail.png" alt="ln"> </a>
-              <!-- logo from https://thenounproject.com/search/?q=mail&i=801656 -->
-          <a href="https://www.linkedin.com/in/hilariesit">
-              <img class="logo" src="images/linkedin.png" alt="ln"> </a>
-          <a href="https://medium.com/@hs764">
-              <img class="logo" src="images/Monogram.png" alt="medium"> </a>
-          <a href="https://github.com/HilarieSit">
-              <img class="logo" src="images/github.png" alt="git"> </a>
-          <!-- <a href="#"> To Top </a> --> 
+        <h1> Hilarie Sit </h1>
+        <div id="menu">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
+        <ul>
+            <li>Machine Learning</li>
+            <li>Modeling</li>
+            <li>Design</li>
+            <li>About</li>
+        </ul>
     </nav>
     <!--end of nav-->
 
-    <div id="bio_writing">
-      <div id="bio_img">
-        <img src="images/me.jpg" alt="me">
-      </div>
-      <div id="bio_txt">
-        <p> Hilarie received her PhD in Remote Sensing and BS in Biological Engineering from Cornell University. Her research interests lie at the intersection of engineering and computing. Her work examined the application of machine learning
-          to characterize the effects of atmospheric ducting on EM radiation within the maritime setting.
-      </div>
-    </div>
-
     <div class="projects">
-        <div class="proj_containers">
+        <div class="proj_containers" data-classtype="Machine Learning" data-aos="fade-up">
             <div class="img_containers">
-                <img class="mySlides2" src="images/Fig3.png" alt="mlp" >
+                <img src="images/Fig3.png" alt="deeplearning">
             </div>
             <!--end of img_containers-->
-            <a href="research.html">
+            <a href="https://authors.elsevier.com/sd/article/S0098-3004(21)00209-0">
             <div class="txt_containers">
-                <h6> Research Papers </h6>
-                <h5> Machine Learning for EM Duct Characterization Within the Marine Atmosphere</h5>
-                <p> Demostrated the suitability of machine learning approaches on the real-time duct characterization problem </p>
-                <div class="overlay"><h6>More Info &#x2192;</h6></div>
+                <h6> Journal Article </h6>
+                <h5> Deep Learning for Classifying and Characterizing Atmospheric Ducting within the Maritime Setting </h5>
+                <p> Two-step deep learning model for predicting refractivity profile parameters under various ducting conditions </p>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
             </div>
             <!--end of txt_containers--></a>
         </div>
         <!--end of proj_containers-->
 
-        <div class="proj_containers">
+        <div class="proj_containers" data-classtype="Modeling" data-aos="fade-up">
             <div class="img_containers">
-                <img class="mySlides2" src="images/eye.png" alt="eye.png" >
+                <img src="images/posterior.png" alt="posterior">
             </div>
             <!--end of img_containers-->
-            <a href="https://ecommons.cornell.edu/handle/1813/57231">
+            <a href="https://github.com/HilarieSit/hmdbn">
             <div class="txt_containers">
-                <h6> Report / Team Project </h6>
-                <h5> COMSOL Simulation of Ocular Drug Delivery from Hydrogel Ring </h5>
-                <p> Modeled Ofloxicin pharmakinetics from a hydrogel ring to the posterior eye using COMSOL Multiphysics and AutoCAD </p>
-                <div class="overlay"><h6>View Report &#x2192;</h6></div>
-            </div></a>
-            <!--end of txt_containers-->
+                <h6> Computational Model </h6>
+                <h5> Hidden Markov Induced Dynamic Bayesian Network </h5>
+                <p> Re-implementation of a Hidden Markov induced Dynamic Bayesian Network for inferring Gene Regulatory Networks from time-series microarray data </p>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
+            </div>
+            <!--end of txt_containers--></a>
         </div>
         <!--end of proj_containers-->
 
-        <div class="proj_containers">
+        <div class="proj_containers" data-classtype="Machine Learning Outreach" data-aos="fade-up">
             <div class="img_containers">
-                <img class="mySlides2" src="images/clubmanage.png" alt="guide" >
+                <img src="images/gitbook.png" alt="cee">
+            </div>
+            <!--end of img_containers-->
+            <a href="https://hs764.gitbook.io/cee-5735/">
+            <div class="txt_containers">
+                <h6> Gitbook </h6>
+                <h5> Software Resource for Mathematical Modeling of Natural and Engineered Systems </h5>
+                <p> Resource created for CEE 5735 students about Anaconda, machine learning libraries, FEniCS, etc. </p>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
+            </div>
+            <!--end of txt_containers--></a>
+        </div>
+        <!--end of proj_containers-->
+
+        <div class="proj_containers" data-classtype="Machine Learning" data-aos="fade-up">
+            <div class="img_containers">
+                <img src="images/gpr.png" alt="gpr">
+            </div>
+            <!--end of img_containers-->
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019RS006890?af=R">
+            <div class="txt_containers">
+                <h6> Journal Article </h6>
+                <h5> Gaussian Process Regression for Estimating EM Ducting Within the Marine Atmospheric Boundary Layer </h5>
+                <p> GPR implementation addressing severe sensor noise on radar observations </p>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
+            </div>
+            <!--end of txt_containers--></a>
+        </div>
+        <!--end of proj_containers-->
+
+        <div class="proj_containers" data-classtype="Machine Learning Outreach" data-aos="fade-up">
+            <div class="img_containers">
+                <img src="images/gpr.jpeg" alt="gpr2">
+            </div>
+            <!--end of img_containers-->
+            <a href="https://towardsdatascience.com/quick-start-to-gaussian-process-regression-36d838810319">
+            <div class="txt_containers">
+                <h6> Medium Article </h6>
+                <h5> Quick Start to Gaussian Process Regression </h5>
+                <p> A quick guide to understanding Gaussian process regression (GPR) and using scikit-learn’s GPR package; > 61K reads </p>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
+            </div>
+            <!--end of txt_containers--></a>
+        </div>
+        <!--end of proj_containers-->
+
+        <div class="proj_containers" data-classtype="Machine Learning Outreach" data-aos="fade-up">
+            <div class="img_containers">
+                <img src="images/meme.jpeg" alt="meme">
+            </div>
+            <!--end of img_containers-->
+            <a href="https://medium.com/@hs764/getting-started-with-gpu-computing-for-machine-learning-fb2f9b6cfda0">
+            <div class="txt_containers">
+                <h6> Medium Article </h6>
+                <h5> Getting started with GPU Computing for machine learning </h5>
+                <p> A quick guide for setting up Google Cloud virtual machine instance or Windows OS computer to use NVIDIA GPU with Pytorch and Tensorflow </p>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
+            </div>
+            <!--end of txt_containers--></a>
+        </div>
+        <!--end of proj_containers-->
+
+        <div class="proj_containers" data-classtype="Machine Learning" data-aos="fade-up">
+            <div class="img_containers">
+                <img src="images/mlp.jpg" alt="mlp">
+            </div>
+            <!--end of img_containers-->
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019RS006798">
+            <div class="txt_containers">
+                <h6> Journal Article </h6>
+                <h5> Characterizing Evaporation Ducts Within the Marine Atmospheric Boundary Layer Using Artificial Neural Networks </h5>
+                <p> Demostrated the suitability of artificial neural networks for the duct characterization problem</p>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
+            </div>
+            <!--end of txt_containers--></a>
+        </div>
+        <!--end of proj_containers-->
+
+        <div class="proj_containers" data-classtype="Design" data-aos="fade-up">
+            <div class="img_containers">
+                <img src="images/clubmanage.png" alt="guide">
             </div>
             <!--end of img_containers-->
             <a href="https://github.com/HilarieSit/ClubManage-backend">
@@ -85,15 +155,33 @@
                 <h5> ClubManage </h5>
                 <p> Designed club management application and built backend using Flask and SQLAlchemy <br>
                 Best Documentation & Runner-up for Best Application Design, Spring '20 backend course</p>
-                <div class="overlay"><h6>View Code &#x2192;</h6></div>
-            </div></a>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
+            </div>
+            <!--end of txt_containers--></a>
         </div>
+        <!--end of proj_containers-->
 
-        <div class="proj_containers">
+        <div class="proj_containers" data-classtype="Modeling" data-aos="fade-up">
             <div class="img_containers">
-              <video muted playsinline loop autoplay>
-                  <source src="images/ceegsa.mov" type="video/mp4">
-              </video>
+                <img src="images/eye.png" alt="eye.png">
+            </div>
+            <!--end of img_containers-->
+            <a href="https://ecommons.cornell.edu/handle/1813/57231">
+            <div class="txt_containers">
+                <h6> COMSOL Simulation / Team Project </h6>
+                <h5> Computational Study of Hydrogel Ring Device for Ocular Drug Delivery </h5>
+                <p> Modeled Ofloxicin pharmakinetics from a hydrogel ring to the posterior eye using COMSOL Multiphysics and AutoCAD </p>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
+            </div>
+            <!--end of txt_containers--></a>
+        </div>
+        <!--end of proj_containers-->
+
+        <div class="proj_containers" data-classtype="Design" data-aos="fade-up">
+            <div class="img_containers">
+                <video muted playsinline loop autoplay>
+                    <source src="images/ceegsa.mov" type="video/mp4">
+                </video>
             </div>
             <!--end of img_containers-->
             <a href="https://github.com/HilarieSit/ceegsa-redesigned">
@@ -101,112 +189,124 @@
                 <h6> Web Development </h6>
                 <h5> CEE GSA Website Redesign </h5>
                 <p> Redesigned a responsive website for CEE GSA using HTML5/CSS3/JS/jQuery </p>
-                <div class="overlay"><h6>View Code &#x2192;</h6></div>
-            </div></a>
-        </div>
-
-        <div class="proj_containers">
-            <div class="img_containers">
-                <img class="mySlides2" src="images/guide.png" alt="guide" >
+                <div class="overlay"><h6>View &#x2192;</h6></div>
             </div>
-            <!--end of img_containers-->
+            <!--end of txt_containers--></a>
+        </div>
+        <!--end of proj_containers-->
+
+        <div class="proj_containers" data-classtype="Machine Learning Outreach" data-aos="fade-up">
+            <div class="img_containers">
+                <img src="images/guide.png" alt="guide">
+            </div>
             <a href="https://github.com/HilarieSit/ML-Mini-Course">
             <div class="txt_containers">
-                <h6> Guides & Articles </h6>
+                <h6> Jupyter Notebooks </h6>
                 <h5> Neural Network Mini-Course </h5>
                 <p> Guides and activities for Summer 2018 interns to introduce them to neural networks and their implementation with Tensorflow </p>
-                <div class="overlay"><h6>View Jupyter Notebooks &#x2192;</h6></div>
-            </div></a>
+                <div class="overlay"><h6>View &#x2192;</h6></div>
+            </div>
+            <!--end of txt_containers--></a>
         </div>
-
-      </div>
+        <!--end of proj_containers-->
+    </div>
     <!--end of projects-->
 
-    <div id="about">
-      <div class="about_block">
-        <h5> Teaching </h5>
+    <div id="bigabout">
+        <div id="bio" data-aos="fade-up">
+            <div id="bio_img">
+              <img src="images/IMG_1941.jpg" alt="me">
+            </div>
+            <!--end of bio_img-->
+            <div id="bio_txt">
+              <h5> Biography </h5>
+              <p> I received my Ph.D. in Remote Sensing from Cornell University. My dissertation focuses on examining the application of machine learning methods 
+                for characterizing EM ducting within maritime settings. More broadly, my research interests lie at the intersection of computing and engineering.
+            </div>
+            <!--end of bio_txt-->
+        </div>
+        <!--end of bio-->
+        
+        <div id="about">
+          <div class="about_block" data-aos="fade-up">
+            <h5> Education </h5>
+            <p> Ph.D. Remote Sensing, Cornell University, 2021 </p>
+            <p> M.S. Remote Sensing, Cornell University, 2020 </p>
+            <p> B.S. Biological Engineering, Cornell University, 2018 </p>
+          </div><!--end of education-->
 
-        <div class="res_block">
-          <h4> PLBIO 2400 Teaching Assistant </h4>
-          <span> Spring 2018 </span>
-          <ul>
-            <li> Instructed recitation and graded written assignments </li>
-          </ul>
-        </div><!--end of res_block-->
+          <div class="about_block" data-aos="fade-up">
+            <h5> Publications </h5>
+            <ul>
+              <li> Sit, H., Earls, C.J. (2021) “Deep learning for classifying and characterizing atmospheric ducting within the maritime setting,” Computers and Geosciences, Elsevier, In Press. </li>
+              <li> Sit, H., Earls, C.J. (2020) “Gaussian process regression for estimating EM ducting within the Marine Atmospheric Boundary Layer,” Radio Science, American Geophysical Union, Vol. 55, Issue 6, pp. 1-14.</li>
+              <li> Sit, H., Earls, C.J. (2019) “Characterizing evaporation ducts within the marine atmospheric boundary layer using artificial neural networks,” Radio Science, American Geophysical Union, Vol. 54, Issue 12, pp. 1181-1191.</li>
+            </ul>
+          </div><!--end of publications-->
 
-        <div class="res_block">
-          <h4> CS 1300 Teaching Assistant </h4>
-          <span> Fall 2017 </span>
-          <ul>
-            <li> Instructed recitation and graded HTML/CSS/jQuery/PHP assignments </li>
-            <li> Assisted students with debugging and understanding
-              course concepts during office hours</li>
-          </ul>
-        </div><!--end of res_block-->
+            <div class="about_block" data-aos="fade-up">
+                <h5> Teaching & Advising </h5>
+                <p>Teaching Assistant </p>
+                <ul class="tight">
+                    <li> CEE 5735: Mathematical Modeling of Natural and Engineered Systems, Fall 2020 </li>
+                    <li> PLBIO 2400: Green World Blue Planet, Spring 2018 </li>
+                    <li> CS 1300: Introductory Design and Programming for the Web, Fall 2017 </li>
+                </ul>
+                <p> Civil and Environmental Engineering Graduate Peer Mentor, Fall 2020 </p>  
+                <p> Research Mentor </li>
+                <ul class="tight">
+                    <li> Cornell undergraduate intern, Summer 2019 </li>
+                    <li> High school student interns, Summer 2018 </li>
+                </ul>
+                <p> Engineering Peer Advisor, Fall 2016 & Fall 2017 </li>
+            </div><!--end of TA-->
+        
+            <div class="about_block" data-aos="fade-up">
+              <h5> Involvement & Service </h5>
+                <p> Cornell Alumni Admissions Ambassador, 2020 - present </p>  
+                <p> Civil and Environmental Graduate Student Association </p>
+                <ul class="tight">
+                  <li> President, 2020 - 2021 </li>
+                  <li> Treasurer, 2019 - 2020 </li>
+                  <li> Field Representative, 2018 - 2019 </li>
+                </ul>                                                             
+                <p> IEEE Access Peer Reviewer, 2020 </p>                                                                                                                                                                                                    
+                <p> Code-4-Kids Volunteer Instructor, 2020 </p>
+                <p> Alpha Phi Omega National Service Fraternity Volunteer, 2015 - 2017 </p>
+                <p> Cornell Society of Women Engineers Outreach, 2014 - 2016 </p>
+            </div><!--end of involvement-->
 
-        <div class="res_block">
-          <h4> ENGRG 1500 Peer Advisor </h4>
-          <span> Fall 2016 &amp; Fall 2017 </span>
-          <ul>
-            <li> Planned and organized the weekly first-year engineering seminar to assist faculty advisor and provide
-                guidance to first-year students </li>
-          </ul>
-        </div><!--end of res_block-->
-      </div><!--end of blue-->
-
-      <div class="about_block">
-        <h5>  Involvement </h5>
-        <div class="res_block">
-          <h4> CEE Graduate Student Association </h4>
-          <span> Aug 2018 - Present </span>
-          <ul>
-            <li> Treasurer (current) </li>
-            <li> GPSA Representative (past): Represented CEE GSA at Graduate and Professional Student Association meetings </li>
-          </ul>
-        </div><!--end of res_block-->
-
-        <div class="res_block">
-          <h4> Rawlings Research Scholar </h4>
-          <span> Aug 2014 - May 2018 </span>
-          <ul>
-            <li> Undergraduate research in biomedical engineering (Jan. 2015 - Dec. 2017), advised by Prof. Ben Cosgrove </li>
-          </ul>
-        </div><!--end of res_block-->
-
-        <div class="res_block">
-          <h4> Alpha Epsilon Honor Society </h4>
-          <span> Aug 2017 - May 2018 </span>
-          <ul>
-            <li> Outreach, mentoring, and volunteering with the Biological and Environmental Engineering honor society </li>
-          </ul>
-        </div><!--end of res_block-->
-      </div><!--end of blue-->
-
-
-      <div class="about_block">
-        <h5> Coursework </h5>
-
-        <div id="coursework">
-          <ul>
-            <li> CS 6780 Advanced Machine Learning </li>
-            <li> CS 6670 Computer Vision </li>
-            <li> CS 4780 Large-Scale Machine Learning </li>
-            <li> CEE 6000 Numerical Methods </li>
-          </ul>
-          <ul>
-            <li> CEE 5780 Finite Element Analysis </li>
-            <li> MATH 4210 Nonlinear Dynamics and Chaos </li>
-            <li> BEE 4530 Computer-Aided Engineering </li>
-            <li> NBA 5380 Business Factory Idea </li>
-          </ul>
-        </div><!--end of coursework-->
-      </div><!--end of gray-->
+            <div class="about_block" data-aos="fade-up">
+              <h5> Awards & Honors </h5>
+                <p> Alpha Epsilon Agricultural & Biological Engineering Honor Society, 2017 </p>
+                <p> John McMullen Deans Scholar, College of Engineering, 2014 - 2018 </p>
+                <p> Hunter R. Rawlings III Cornell Presidential Research Scholar, Cornell Commitment, 2014 - 2018 </p>
+            </div><!--end of awards-->
+        
+        
+            <div class="about_block" data-aos="fade-up">
+              <h5> Selected Coursework </h5>
+              <div id="coursework">
+                <ul>
+                  <li> CS 6780 Advanced Machine Learning </li>
+                  <li> CS 6670 Computer Vision </li>
+                  <li> CS 4780 Large-Scale Machine Learning </li>
+                  <li> CEE 6000 Numerical Methods </li>
+                </ul>
+                <ul>
+                  <li> CEE 5780 Finite Element Analysis </li>
+                  <li> MATH 4210 Nonlinear Dynamics and Chaos </li>
+                  <li> BEE 4530 Computer-Aided Engineering </li>
+                  <li> NBA 5380 Business Factory Idea </li>
+                </ul>
+              </div><!--end of coursework-->
+            </div><!--end of coursework-->
+      </div><!--end of bigabout-->
     </div>
 
-
-
     <footer>
-        <p> &copy; Hilarie Sit, 2020. All Rights Reserved. </p>
+        <p> &copy; Hilarie Sit, 2021. All Rights Reserved. </p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts.js"></script>
 </body>
