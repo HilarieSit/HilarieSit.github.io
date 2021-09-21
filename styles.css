@@ -350,7 +350,7 @@ footer p {
   }
 
   #bigabout{
-    padding-top: 15px;
+    padding-top: 1x;
   }
 
   #about {
@@ -410,14 +410,14 @@ footer p {
   }
   .proj_containers {
     display: inline-table;
-    width: 45%;
+    width: 90%;
     margin: 10px 7px;
     overflow: hidden;
   }
-  .proj_containers {
+  /* .proj_containers {
     width: 90%;
     margin-bottom: 20px;
-  }
+  } */
   .txt_containers {
     padding: 25px 20px 40px 20px;
     text-align: left;

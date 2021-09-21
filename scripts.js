@@ -1,5 +1,7 @@
-// change active label
 $(document).ready(function() {
+  // track menu clicks
+  var i2 = 0
+  // change active label
   $('nav li').on('click', function(e){
     e.preventDefault();
     var active_class = $(this).parent().find('li.active');
@@ -10,7 +12,7 @@ $(document).ready(function() {
     var attribute = $(this).text();
 
     if (attribute == active_attr){
-        // if clicked on active label, show all projects
+      // if clicked on current active label, show all projects
       $('#bigabout').hide();
       $('.proj_containers').show();
       $('.proj_containers:nth-child(even) .txt_containers').css('background-color', '#eee');
@@ -18,10 +20,11 @@ $(document).ready(function() {
     } else {
       $(this).addClass('active');
       if (attribute == "About"){
-        // if clicked on "About"
+        // if clicked on "About", show about divs
         $('.proj_containers').hide();
         $('#bigabout').show();
       } else {
+        // if clicked on topic, show correct project divs
         var i = 0;
         $('.proj_containers').each(function() {
           var classtype = $(this).data('classtype');
@@ -47,9 +50,12 @@ $(document).ready(function() {
       duration: 750,
       mirror: false
     });
+
     lines();
+    i2 = 0;
   });
 
+  // add overlay to project containers on hover
   $('.txt_containers').hover(function() {
       overlay = $(this).children('.overlay');
       overlay.show('slide', {direction: 'left'});
@@ -58,7 +64,7 @@ $(document).ready(function() {
       overlay.hide();
   });
 
-  // block scrolling animation
+  // scrolling animation
   AOS.init({
     offset: 0,
     duration: 750,
@@ -66,7 +72,6 @@ $(document).ready(function() {
   })
 
   // phone dropdown menu
-  var i2 = 0
   $('#menu').on('click', function(e){
     e.stopPropagation();
     e.preventDefault();
@@ -80,17 +85,37 @@ $(document).ready(function() {
     }
   });
 
+  // fix styling issues on resize
   $(window).resize(function() {
     if($(window).width() >= 700) {
-        // if larger or equal
+        $('nav').css('opacity', '1');
         $('nav ul').show();
-        $('h1').show()
+        $('h1').show();
+        $('.proj_containers').css('display', 'flex');
     } else {
-        // if smaller
         $('nav ul').hide();
+        $('.proj_containers').css('display', 'inline-block');
     }
-}).resize(); // This will simulate a resize to trigger the initial run.
+  }).resize(); 
 
+  // fade out nav on scroll down
+  var lastScrollTop = 0;
+  $(window).on('scroll', function(){
+    var st = $(window).scrollTop();
+    if ($(window).width() < 700) {
+      if (st <= 50){
+        $('nav').css('opacity', '1');
+      } else {
+        if (st > lastScrollTop){
+            $('nav').stop().fadeTo(100, 0);
+        } 
+        else {
+            $('nav').css('opacity', '1');
+        }
+      }
+    }
+    lastScrollTop = st;
+  });
 });
 
 function cross(){
