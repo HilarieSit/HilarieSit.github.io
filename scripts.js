@@ -93,12 +93,12 @@ $(document).ready(function() {
         $('nav').css('opacity', '1');
         $('nav ul').show();
         $('h1').show();
-        if (w != nw){
-          $('.proj_containers').css('display', 'flex');
-        }
+        $('.proj_containers').css('display', 'flex');
     } else {
         $('nav ul').hide();
-        $('.proj_containers').css('display', 'inline-block');
+        if (w == nw){
+          $('.proj_containers').css('display', 'inline-block');
+        }
     }
   }).resize(); 
 
