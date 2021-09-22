@@ -86,12 +86,16 @@ $(document).ready(function() {
   });
 
   // fix styling issues on resize
+  w = $(window).width();
   $(window).resize(function() {
+    nw = $(window).width();
     if($(window).width() >= 700) {
         $('nav').css('opacity', '1');
         $('nav ul').show();
         $('h1').show();
-        $('.proj_containers').css('display', 'flex');
+        if (w != nw){
+          $('.proj_containers').css('display', 'flex');
+        }
     } else {
         $('nav ul').hide();
         $('.proj_containers').css('display', 'inline-block');
