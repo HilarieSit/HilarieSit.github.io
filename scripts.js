@@ -1,6 +1,8 @@
 $(document).ready(function() {
   // track menu clicks
   var i2 = 0
+  $('.proj_containers').hide();
+  $('#bigabout').show();
 
   // change active label
   $('nav li').on('click', function(e){
