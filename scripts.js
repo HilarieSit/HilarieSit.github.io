@@ -47,6 +47,7 @@ $(document).ready(function() {
 
     lines();
     i2 = 0;
+    window.scrollTo(0, 0);
   });
 
   // add overlay to project containers on hover
@@ -78,6 +79,14 @@ $(document).ready(function() {
       i2 = 0;
     }
   });
+  if($(window).width() < 700) {
+    $('nav ul').hide();
+    $('.proj_containers').each(function() {
+      if ($(this).is(":visible")) {
+        $(this).css('display', 'inline-block');
+      }
+    });
+  };
 
   // fix styling issues on resize
   $(window).resize(function() {
@@ -123,7 +132,8 @@ $(document).ready(function() {
 function cross(){
   if ($(window).width() < 700) {
     $('h1').hide();
-    $('nav ul').stop(true,true).slideDown('slow');
+    // $('nav ul').stop(true,true).slideDown('slow');
+    $('nav ul').show();
     $('.bar1').css('transform', 'rotate(-45deg) translate(-9px, 6px)');
     $('.bar2').css('opacity', '0');
     $('.bar3').css('transform', 'rotate(45deg) translate(-8px, -8px)');
@@ -133,7 +143,8 @@ function cross(){
 function lines(){
   if ($(window).width() < 700) {
     $('h1').show();
-    $('nav ul').stop(true,true).slideUp();
+    // $('nav ul').stop(true,true).slideUp();
+    $('nav ul').hide();
     $('.bar1').css('transform', 'none');
     $('.bar2').css('opacity', '1');
     $('.bar3').css('transform', 'none');
