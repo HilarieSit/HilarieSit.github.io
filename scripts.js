@@ -27,8 +27,15 @@ $(document).ready(function() {
           $(this).show();
           if ((i % 2) == 1){
             $(this).find('.txt_containers').css('background-color', '#eee');
-          } else {
+          } 
+          else {
             $(this).find('.txt_containers').css('background-color', '#d2dfe7');
+          }
+          if ($(window).width() < 700) {
+            $(this).css('display', 'inline-block');
+          }
+          else {
+            $(this).css('display', 'flex');
           }
           i++;
         }
