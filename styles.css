@@ -3,6 +3,11 @@
   src: url('Just_Another_Hand/JustAnotherHand-Regular.ttf');
 }
 
+iframe{
+  width: 100%;
+  height: 100%;
+}
+
 a {
   outline: 0;
   text-decoration: none;
@@ -22,7 +27,12 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
+/* .phone{
+  display: inline-block;
+}
+.computer{
+  display: flex;
+} */
 /* nav bar styling */
 nav {
   margin: 50px 0 0;
@@ -414,15 +424,10 @@ footer p {
     margin-top: 0;
   }
   .proj_containers {
-    display: inline-table;
     width: 90%;
-    /* margin: 10px 7px; */
+    display: inline-block;
     overflow: hidden;
   }
-  /* .proj_containers {
-    width: 90%;
-    margin-bottom: 20px;
-  } */
   .txt_containers {
     padding: 25px 20px 40px 20px;
     text-align: left;
@@ -450,6 +455,13 @@ footer p {
 
   .img_containers{
     width: 100%;
+  }
+
+  iframe{
+    width: 100%;
+    height: 250px;
+    padding: 0;
+    margin: 0;
   }
 
   .img_containers img, .img_containers video {
