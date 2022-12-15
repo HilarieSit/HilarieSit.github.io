@@ -1,8 +1,34 @@
+function filter(attribute){
+  var i = 0;
+  $('.proj_containers').each(function() {
+    var classtype = $(this).data('classtype');
+    if (classtype.includes(attribute)){
+      $(this).show();
+      if ((i % 2) == 1){
+        $(this).find('.txt_containers').css('background-color', '#eee');
+      } 
+      else {
+        $(this).find('.txt_containers').css('background-color', '#d2dfe7');
+      }
+      if ($(window).width() < 700) {
+        $(this).css('display', 'inline-block');
+      }
+      else {
+        $(this).css('display', 'flex');
+      }
+      i++;
+    }
+    else {
+      $(this).hide();
+    }
+  });
+  $('#bigabout').hide();
+}
+
 $(document).ready(function() {
   // track menu clicks
   var i2 = 0
-  $('.proj_containers').hide();
-  $('#bigabout').show();
+  filter("Research")
 
   // change active label
   $('nav li').on('click', function(e){
@@ -20,30 +46,7 @@ $(document).ready(function() {
       $('#bigabout').show();
     } else {
       // if clicked on topic, show correct project divs
-      var i = 0;
-      $('.proj_containers').each(function() {
-        var classtype = $(this).data('classtype');
-        if (classtype.includes(attribute)){
-          $(this).show();
-          if ((i % 2) == 1){
-            $(this).find('.txt_containers').css('background-color', '#eee');
-          } 
-          else {
-            $(this).find('.txt_containers').css('background-color', '#d2dfe7');
-          }
-          if ($(window).width() < 700) {
-            $(this).css('display', 'inline-block');
-          }
-          else {
-            $(this).css('display', 'flex');
-          }
-          i++;
-        }
-        else {
-          $(this).hide();
-        }
-      });
-      $('#bigabout').hide();
+      filter(attribute)
     }
 
     AOS.init({

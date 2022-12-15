@@ -27,12 +27,7 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-/* .phone{
-  display: inline-block;
-}
-.computer{
-  display: flex;
-} */
+
 /* nav bar styling */
 nav {
   margin: 50px 0 0;
@@ -126,7 +121,6 @@ nav li:hover{
   bottom: 20px;
   right: 20px;
 }
-
 
 h4 {
   font: 30px Lato, serif;
