@@ -16,6 +16,7 @@ a {
 }
 
 body {
+  background-color: #fff;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -30,19 +31,23 @@ body::-webkit-scrollbar {
 
 /* nav bar styling */
 nav {
-  margin: 50px 0 0;
+  margin: 30px 0 0;
 }
 nav h1{ 
   margin: 0 0 -10px;
-  padding: 5px 0 0;
-  font-size: 90px;
-  font-family: 'Just Another Hand', cursive;
+  padding: 10px 0;
+  /* font-size: 90px; */
+  font-size: 65px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  /* font-family: 'Just Another Hand', cursive; */
   text-align: center;
-  background: linear-gradient(185deg, black, #2a5887, #eee, #2a5887, black);
-  -webkit-background-clip: text;
+  /* background: linear-gradient(185deg, black, #2a5887, #eee, #2a5887, black); */
+  /* background: #2a5887; */
+  /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 100% 200%;
-  font-weight: normal;
+  background-size: 100% 200%; */
+  color: #2a5887;
+  font-weight: 700;
   cursor: default;
 }
 nav ul{
@@ -55,10 +60,13 @@ nav ul{
 nav li{
   color: #222;
   display: inline-block;
-  margin: 0 25px;
-  padding: 5px 0;
-  font-family: 'Just Another Hand', cursive;
-  font-size: 45px;
+  margin: 0 35px;
+  padding: 0 0 0;
+  /* font-family: 'Just Another Hand', cursive; */
+  font-family: 'PT Sans Narrow', sans-serif;
+  /* font-size: 45px; */
+  font-size: 30px;
+  font-weight: 200;
   cursor: pointer;
 }
 nav li:hover{
@@ -66,6 +74,15 @@ nav li:hover{
 }
 .active{
   color: #7a9cbf;
+}
+
+hr{
+  border: none;
+  max-width: 983px;
+  margin-bottom: 5px;
+  height: 1.5px;
+  color: #ddd; 
+  background-color: #ddd;
 }
 
 /* project styling */
@@ -131,6 +148,7 @@ h5 {
   margin: 7px 0 7px 0;
   align-items: center;
   font: 28px PT Sans Narrow, sans-serif;
+  font-weight: 700;
   color: #16161d;
   text-decoration: none;
 }
@@ -316,6 +334,10 @@ footer p {
 }
 
 @media screen and (max-width: 1050px) {
+  hr{
+    width: 90%;
+  } 
+
   #bio {
     margin-top: -15px;
     width: auto;
@@ -385,6 +407,9 @@ footer p {
     height: 85px;
     background-color: rgba(255,255,255,0.95);
   }
+  hr{
+    height: 0px;
+  }
   #menu{
     float: right;
     display: block;
@@ -412,7 +437,7 @@ footer p {
   nav h1{
     float: left;
     padding: 20px 0 0 5%;
-    font-size: 70px;
+    font-size: 50px;
   }
   .projects{
     margin-top: 0;
