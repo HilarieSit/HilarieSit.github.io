@@ -144,9 +144,9 @@ function cross(){
     $('h1').hide();
     // $('nav ul').stop(true,true).slideDown('slow');
     $('nav ul').show();
-    $('.bar1').css('transform', 'rotate(-45deg) translate(-9px, 6px)');
+    $('.bar1').css('transform', 'rotate(-45deg) translate(-9px, 6.5px)');
     $('.bar2').css('opacity', '0');
-    $('.bar3').css('transform', 'rotate(45deg) translate(-8px, -8px)');
+    $('.bar3').css('transform', 'rotate(45deg) translate(-8px, -7px)');
   }
 }; 
 
